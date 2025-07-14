@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-amber-700">Msafari Tours</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#group-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Itineraries</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-amber-600 font-semibold transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="index.html#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#group-tours" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-gray-700">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-gray-700">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-amber-600 font-semibold flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="index.html#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">About Msafari Tours</h1>
+                <p class="text-xl">Your trusted partner for authentic East African adventures</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Founded in 2010 by passionate conservationists and travel experts, Msafari Tours was born 
+                        from a simple belief: that tourism can be a powerful force for good when done responsibly. 
+                        "Msafari" means "traveler" in Swahili, reflecting our commitment to creating meaningful 
+                        connections between visitors and the incredible landscapes, wildlife, and cultures of East Africa.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Based in Kampala, Uganda, with offices in the UK, we combine deep local knowledge with 
+                        international expertise to create transformative travel experiences. Every tour we design 
+                        supports conservation efforts and community development, ensuring that your adventure 
+                        contributes to the preservation of East Africa's natural and cultural heritage.
+                    </p>
+                    <div class="flex space-x-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-amber-600">15+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-amber-600">5,000+</div>
+                            <div class="text-gray-600">Happy Travelers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-amber-600">95%</div>
+                            <div class="text-gray-600">Customer Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Local guide with tourists" 
+                         class="rounded-xl shadow-lg">
+                    <div class="absolute -bottom-6 -right-6 bg-amber-600 text-white p-6 rounded-xl">
+                        <i class="fas fa-heart text-2xl mb-2"></i>
+                        <div class="font-bold">Locally Owned</div>
+                        <div class="text-sm">Supporting Communities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
+            <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-16">
+                To create transformative travel experiences that connect people with East Africa's extraordinary 
+                wildlife and cultures while generating positive impact for conservation and local communities.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Conservation</h3>
+                    <p class="text-gray-600">
+                        Supporting wildlife conservation through responsible tourism practices and direct funding 
+                        of protection initiatives and research programs.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Community</h3>
+                    <p class="text-gray-600">
+                        Empowering local communities through employment, education, and sustainable development 
+                        projects that improve lives and preserve culture.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
+                    <p class="text-gray-600">
+                        Delivering exceptional service and unforgettable experiences through expert guides, 
+                        carefully curated itineraries, and attention to detail.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our passionate team of local experts and international advisors work together to create unforgettable experiences
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 bg-amber-200 flex items-center justify-center">
+                        <div class="text-6xl text-amber-700 font-bold">JK</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">James Kiggundu</h3>
+                        <p class="text-amber-600 font-medium mb-3">Founder & CEO</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Wildlife conservationist with 20+ years experience in East African tourism and community development.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 bg-green-200 flex items-center justify-center">
+                        <div class="text-6xl text-green-700 font-bold">SM</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Mitchell</h3>
+                        <p class="text-amber-600 font-medium mb-3">Operations Director</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            International tourism expert specializing in luxury travel and sustainable tourism practices.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 bg-blue-200 flex items-center justify-center">
+                        <div class="text-6xl text-blue-700 font-bold">DN</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">David Namanya</h3>
+                        <p class="text-amber-600 font-medium mb-3">Senior Guide</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Expert wildlife tracker and cultural interpreter with deep knowledge of Uganda's national parks.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+                    <div class="h-64 bg-purple-200 flex items-center justify-center">
+                        <div class="text-6xl text-purple-700 font-bold">GN</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Grace Nakimuli</h3>
+                        <p class="text-amber-600 font-medium mb-3">Community Liaison</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Cultural specialist and community development expert working with local partnerships.
+                        </p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center text-white text-sm">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ethics & Responsibility -->
+    <section id="ethics" class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Ethics & Responsibility</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our commitment to ethical tourism practices that benefit wildlife, communities, and travelers
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Conservation Impact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Wildlife Protection</h4>
+                                <p class="text-gray-600">5% of all tour revenue directly funds anti-poaching efforts and wildlife monitoring programs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Habitat Preservation</h4>
+                                <p class="text-gray-600">Supporting reforestation projects and sustainable land use practices around national parks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Research Support</h4>
+                                <p class="text-gray-600">Collaborating with universities and research institutions on wildlife and conservation studies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Community Development</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Local Employment</h4>
+                                <p class="text-gray-600">90% of our staff are from local communities, providing stable income and career development</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Education Programs</h4>
+                                <p class="text-gray-600">Building schools and providing scholarships for children in rural communities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Healthcare Access</h4>
+                                <p class="text-gray-600">Supporting local clinics and mobile health services in remote areas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Working together with leading organizations to create positive impact
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Conservation Organizations</h3>
+                    <p class="text-gray-600 text-sm">WWF, WCS, Jane Goodall Institute</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-university text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Research Institutions</h3>
+                    <p class="text-gray-600 text-sm">Makerere University, Oxford, Cambridge</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-building text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Government Agencies</h3>
+                    <p class="text-gray-600 text-sm">Uganda Wildlife Authority, Rwanda Development Board</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hands-helping text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">NGOs</h3>
+                    <p class="text-gray-600 text-sm">Local community organizations, schools, clinics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Certifications & Memberships</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Recognized for our commitment to quality and sustainable tourism
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-amber-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Licensed Tour Operator</h3>
+                    <p class="text-gray-600">
+                        Fully licensed and bonded tour operator in Uganda, Rwanda, Tanzania, and Kenya
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Sustainable Tourism</h3>
+                    <p class="text-gray-600">
+                        Member of Global Sustainable Tourism Council and Fair Trade Tourism
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">TripAdvisor Excellence</h3>
+                    <p class="text-gray-600">
+                        Certificate of Excellence winner for 5 consecutive years with 5-star ratings
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-amber-400 mb-4">Ready to Start Your Adventure?</h3>
+            <p class="text-gray-300 mb-8">Join thousands of travelers who have experienced the magic of East Africa with us</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Contact Our Team
+                </a>
+                <a href="booking.html" class="border-2 border-amber-600 text-amber-400 hover:bg-amber-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Plan Your Trip
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

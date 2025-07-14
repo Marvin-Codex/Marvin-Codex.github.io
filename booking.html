@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Tools - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-amber-700">Msafari Tours</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#group-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Itineraries</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-amber-600 font-semibold transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="index.html#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#group-tours" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-gray-700">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-gray-700">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-amber-600 font-semibold flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="index.html#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Booking Tools</h1>
+                <p class="text-xl">Plan your responsible East African adventure with our comprehensive booking tools</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Tools Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Quick Links -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Responsible Travel Pledge</h3>
+                    <p class="text-gray-600 mb-6">Commit to sustainable and ethical tourism practices</p>
+                    <button onclick="scrollToSection('responsible-travel')" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        Take Pledge
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Carbon Offsetting</h3>
+                    <p class="text-gray-600 mb-6">Calculate and offset your travel carbon footprint</p>
+                    <button onclick="scrollToSection('carbon-offset')" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        Calculate Offset
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Book Your Tour</h3>
+                    <p class="text-gray-600 mb-6">Start planning your East African adventure today</p>
+                    <button onclick="scrollToSection('booking-form')" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        Book Now
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsible Travel Pledge -->
+    <section id="responsible-travel" class="py-20 bg-green-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Responsible Travel Pledge</h2>
+                <p class="text-xl text-gray-600">
+                    Join us in our commitment to sustainable tourism that benefits local communities and protects wildlife
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Commitment to Responsible Tourism</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-green-700 mb-3">Environmental Protection</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Minimize environmental impact through eco-friendly practices
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Support wildlife conservation initiatives
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Use renewable energy and reduce waste
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Promote Leave No Trace principles
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-green-700 mb-3">Community Benefits</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Support local communities and economies
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Employ local guides and service providers
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Respect local cultures and traditions
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    Fund education and healthcare projects
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="pledge-form" class="space-y-6">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Your Pledge as a Responsible Traveler</h4>
+                        
+                        <div class="space-y-4">
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I commit to respecting local cultures, traditions, and customs during my travels</span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I will minimize my environmental impact and follow Leave No Trace principles</span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I will support local economies by purchasing local products and services</span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I will respect wildlife and maintain appropriate distances during encounters</span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I will travel with awareness and contribute positively to the destinations I visit</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Additional Comments (Optional)</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Share your thoughts on responsible tourism..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-lg font-semibold transition duration-300">
+                        Take the Responsible Travel Pledge
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carbon Offsetting -->
+    <section id="carbon-offset" class="py-20 bg-blue-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Carbon Offset Calculator</h2>
+                <p class="text-xl text-gray-600">
+                    Calculate and offset the carbon footprint of your East African adventure
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <form id="carbon-form" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        
+                        <!-- Flight Information -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-bold text-gray-900">Flight Information</h3>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Departure Country</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Select your country</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                    <option>Germany</option>
+                                    <option>France</option>
+                                    <option>Canada</option>
+                                    <option>Australia</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Number of Passengers</label>
+                                <input type="number" value="1" min="1" max="20" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Flight Class</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Economy</option>
+                                    <option>Premium Economy</option>
+                                    <option>Business</option>
+                                    <option>First Class</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Tour Information -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-bold text-gray-900">Tour Information</h3>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Tour Duration (Days)</label>
+                                <input type="number" value="7" min="1" max="30" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Accommodation Type</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Standard Lodge</option>
+                                    <option>Mid-range Lodge</option>
+                                    <option>Luxury Lodge</option>
+                                    <option>Eco-Lodge</option>
+                                    <option>Camping</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Ground Transportation</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Safari Vehicle (4WD)</option>
+                                    <option>Minivan</option>
+                                    <option>Large Coach</option>
+                                    <option>Mixed Transportation</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="button" onclick="calculateCarbon()" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                            Calculate Carbon Footprint
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Results Section -->
+                <div id="carbon-results" class="mt-8 p-6 bg-blue-50 rounded-lg hidden">
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">Your Carbon Footprint</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-center">
+                        <div class="bg-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-600" id="flight-emissions">0</div>
+                            <div class="text-sm text-gray-600">Flight Emissions (tons CO₂)</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-600" id="tour-emissions">0</div>
+                            <div class="text-sm text-gray-600">Tour Emissions (tons CO₂)</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-600" id="total-emissions">0</div>
+                            <div class="text-sm text-gray-600">Total Emissions (tons CO₂)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-700 mb-4">Offset Cost: <span class="text-2xl font-bold text-green-600" id="offset-cost">$0</span></p>
+                        <button onclick="purchaseOffset()" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                            Purchase Carbon Offset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking-form" class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Book Your East African Adventure</h2>
+                <p class="text-xl text-gray-600">
+                    Start planning your perfect trip with our comprehensive booking form
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <form id="main-booking-form" class="space-y-8">
+                    
+                    <!-- Personal Information -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Personal Information</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Country of Residence *</label>
+                                <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                                    <option value="">Select your country</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                    <option>Germany</option>
+                                    <option>France</option>
+                                    <option>Canada</option>
+                                    <option>Australia</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Number of Travelers *</label>
+                                <input type="number" value="2" min="1" max="20" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Trip Details -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Trip Details</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Preferred Countries *</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Uganda</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Rwanda</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Tanzania</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Kenya</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Tour Interests *</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Gorilla Trekking</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Wildlife Safaris</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Cultural Experiences</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Adventure Activities</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Preferred Travel Dates</label>
+                                <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Trip Duration</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                                    <option>3-5 days</option>
+                                    <option>6-8 days</option>
+                                    <option>9-12 days</option>
+                                    <option>13-15 days</option>
+                                    <option>16+ days</option>
+                                    <option>Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Budget Range (USD)</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                                    <option>Under $1,000 per person</option>
+                                    <option>$1,000 - $2,000 per person</option>
+                                    <option>$2,000 - $3,500 per person</option>
+                                    <option>$3,500 - $5,000 per person</option>
+                                    <option>$5,000+ per person</option>
+                                    <option>Let's discuss</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Accommodation Preference</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                                    <option>Budget/Standard</option>
+                                    <option>Mid-range</option>
+                                    <option>Luxury</option>
+                                    <option>Ultra-Luxury</option>
+                                    <option>Eco-Lodges</option>
+                                    <option>Mixed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Special Requirements -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Special Requirements</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Dietary Restrictions</label>
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Vegetarian</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Vegan</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Gluten-Free</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Halal</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Kosher</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2 rounded">
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Physical Limitations or Accessibility Needs</label>
+                                <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Please describe any mobility issues, medical conditions, or accessibility requirements..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Additional Comments or Special Requests</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Tell us about any special occasions, photography interests, or specific wildlife you hope to see..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Terms and Conditions -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Terms and Conditions</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded" required>
+                                <span class="text-gray-700">I agree to the <a href="#" class="text-amber-600 hover:underline">Terms and Conditions</a> and <a href="#" class="text-amber-600 hover:underline">Privacy Policy</a></span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded">
+                                <span class="text-gray-700">I would like to receive marketing communications and travel updates from Msafari Tours</span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" class="mt-1 mr-3 rounded">
+                                <span class="text-gray-700">I am interested in carbon offsetting for my trip</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                            Submit Booking Request
+                        </button>
+                        <p class="text-sm text-gray-600 mt-4">
+                            * This is a booking inquiry. Our travel experts will contact you within 24 hours to discuss your trip details and provide a customized quote.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-amber-400 mb-4">Questions About Booking?</h3>
+            <p class="text-gray-300 mb-8">Our travel experts are here to help you plan the perfect East African adventure</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Contact Us
+                </a>
+                <a href="tel:+256123456789" class="border-2 border-amber-600 text-amber-400 hover:bg-amber-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carbon Calculator Functions
+        function calculateCarbon() {
+            // Simplified carbon calculation (in a real application, use accurate emission factors)
+            const passengers = parseInt(document.querySelector('input[type="number"]').value) || 1;
+            const duration = parseInt(document.querySelector('input[type="number"]:nth-of-type(2)').value) || 7;
+            
+            // Simplified calculations
+            const flightEmissions = passengers * 2.5; // tons CO2 per passenger (example)
+            const tourEmissions = passengers * duration * 0.1; // tons CO2 per day per passenger
+            const totalEmissions = flightEmissions + tourEmissions;
+            const offsetCost = totalEmissions * 25; // $25 per ton CO2
+            
+            document.getElementById('flight-emissions').textContent = flightEmissions.toFixed(2);
+            document.getElementById('tour-emissions').textContent = tourEmissions.toFixed(2);
+            document.getElementById('total-emissions').textContent = totalEmissions.toFixed(2);
+            document.getElementById('offset-cost').textContent = '$' + offsetCost.toFixed(0);
+            
+            document.getElementById('carbon-results').classList.remove('hidden');
+        }
+        
+        function purchaseOffset() {
+            alert('Carbon offset purchase feature would integrate with a payment processor. Thank you for your commitment to sustainable travel!');
+        }
+        
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

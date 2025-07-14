@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-amber-700">Msafari Tours</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-amber-600 font-semibold transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#group-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Itineraries</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="index.html#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-amber-600 font-semibold flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#group-tours" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-gray-700">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-gray-700">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="index.html#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">Explore East Africa</h1>
+                <p class="text-xl">Discover the diverse landscapes and cultures of Uganda, Rwanda, Tanzania, and Kenya</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                
+                <!-- Uganda -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1564419320461-6870880221ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://flagcdn.com/w40/ug.png" alt="Uganda Flag" class="w-8 h-6 mr-3">
+                            <h2 class="text-3xl font-bold text-gray-900">Uganda</h2>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            The Pearl of Africa offers incredible biodiversity with mountain gorillas in Bwindi, 
+                            tree-climbing lions in Queen Elizabeth, and the powerful Murchison Falls. 
+                            Experience authentic African culture with warm, welcoming people.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Top Attractions</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Bwindi Impenetrable Forest</li>
+                                    <li>• Queen Elizabeth National Park</li>
+                                    <li>• Murchison Falls National Park</li>
+                                    <li>• Lake Bunyonyi</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Best Activities</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Gorilla Trekking</li>
+                                    <li>• Wildlife Safaris</li>
+                                    <li>• Cultural Village Visits</li>
+                                    <li>• Nile River Cruises</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="#uganda-gorilla" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition duration-300 text-center">
+                                Explore Uganda Tours
+                            </a>
+                            <a href="packages.html#gorilla-packages" class="flex-1 border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 rounded-lg transition duration-300 text-center">
+                                View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rwanda -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://flagcdn.com/w40/rw.png" alt="Rwanda Flag" class="w-8 h-6 mr-3">
+                            <h2 class="text-3xl font-bold text-gray-900">Rwanda</h2>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            The Land of a Thousand Hills is renowned for its remarkable conservation success. 
+                            Home to mountain gorillas in Volcanoes National Park and the pristine 
+                            Nyungwe Forest with its canopy walks and chimpanzees.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Top Attractions</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Volcanoes National Park</li>
+                                    <li>• Nyungwe Forest National Park</li>
+                                    <li>• Lake Kivu</li>
+                                    <li>• Kigali Genocide Memorial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Best Activities</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Gorilla Trekking</li>
+                                    <li>• Canopy Walks</li>
+                                    <li>• Chimpanzee Tracking</li>
+                                    <li>• Cultural Experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="#rwanda-gorilla" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition duration-300 text-center">
+                                Explore Rwanda Tours
+                            </a>
+                            <a href="packages.html#gorilla-packages" class="flex-1 border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 rounded-lg transition duration-300 text-center">
+                                View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tanzania -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://flagcdn.com/w40/tz.png" alt="Tanzania Flag" class="w-8 h-6 mr-3">
+                            <h2 class="text-3xl font-bold text-gray-900">Tanzania</h2>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Home to the famous Serengeti migration, Africa's highest peak Mount Kilimanjaro, 
+                            and the pristine Ngorongoro Crater. Tanzania offers unparalleled wildlife 
+                            experiences and diverse landscapes from savannas to tropical coastlines.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Top Attractions</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Serengeti National Park</li>
+                                    <li>• Ngorongoro Crater</li>
+                                    <li>• Mount Kilimanjaro</li>
+                                    <li>• Zanzibar Island</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Best Activities</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Great Migration Safari</li>
+                                    <li>• Mountain Climbing</li>
+                                    <li>• Beach Relaxation</li>
+                                    <li>• Cultural Tours</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="#tanzania-serengeti" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition duration-300 text-center">
+                                Explore Tanzania Tours
+                            </a>
+                            <a href="packages.html#safari-tours" class="flex-1 border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 rounded-lg transition duration-300 text-center">
+                                View Packages
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kenya -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <img src="https://flagcdn.com/w40/ke.png" alt="Kenya Flag" class="w-8 h-6 mr-3">
+                            <h2 class="text-3xl font-bold text-gray-900">Kenya</h2>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            The birthplace of safari, Kenya offers world-class wildlife viewing in the 
+                            Masai Mara, stunning landscapes in Amboseli with views of Kilimanjaro, 
+                            and rich Maasai culture. Experience the Great Migration and diverse ecosystems.
+                        </p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Top Attractions</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Masai Mara National Reserve</li>
+                                    <li>• Amboseli National Park</li>
+                                    <li>• Samburu National Reserve</li>
+                                    <li>• Lake Nakuru</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Best Activities</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Big Five Safaris</li>
+                                    <li>• Hot Air Balloon Rides</li>
+                                    <li>• Maasai Village Visits</li>
+                                    <li>• Bird Watching</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="#kenya-masai" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg transition duration-300 text-center">
+                                Explore Kenya Tours
+                            </a>
+                            <a href="packages.html#safari-tours" class="flex-1 border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 rounded-lg transition duration-300 text-center">
+                                View Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Country Tours -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Multi-Country Adventures</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Combine multiple countries for the ultimate East African experience
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-route text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Uganda + Rwanda</h3>
+                    <p class="text-gray-600 mb-6">Double gorilla trekking experience in both Bwindi and Volcanoes National Parks</p>
+                    <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        View Tours
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-compass text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Kenya + Tanzania</h3>
+                    <p class="text-gray-600 mb-6">Classic safari combination featuring Masai Mara and Serengeti migration</p>
+                    <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        View Tours
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe-africa text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Grand East Africa</h3>
+                    <p class="text-gray-600 mb-6">Ultimate 3-4 country adventure covering gorillas, wildlife, and culture</p>
+                    <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300">
+                        View Tours
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Tour Sections -->
+    
+    <!-- Uganda Tours -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Uganda Tours</h2>
+                <p class="text-xl text-gray-600">Discover the Pearl of Africa's incredible diversity</p>
+            </div>
+            
+            <!-- Uganda Gorilla Tours -->
+            <div id="uganda-gorilla" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Uganda Gorilla Tours</h3>
+                        <p class="text-gray-600 mb-6">
+                            Experience the thrill of encountering mountain gorillas in their natural habitat. 
+                            Bwindi Impenetrable National Park is home to nearly half of the world's remaining 
+                            mountain gorillas. Our expert guides will lead you through ancient forests for 
+                            this once-in-a-lifetime encounter.
+                        </p>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                <span>Expert local guides and trackers</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                <span>Small group sizes (max 8 people)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                <span>Gorilla permits included</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-amber-600 mr-3"></i>
+                                <span>Conservation contribution</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Gorilla Trek
+                            </a>
+                            <a href="blog.html#gorilla-comparison" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:order-first">
+                        <img src="https://images.unsplash.com/photo-1564419320461-6870880221ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Mountain Gorillas in Bwindi" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Uganda Wildlife Safaris -->
+            <div id="uganda-wildlife" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Tree climbing lions in Queen Elizabeth" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Uganda Wildlife Safaris</h3>
+                        <p class="text-gray-600 mb-6">
+                            Explore Uganda's diverse national parks featuring unique wildlife including 
+                            tree-climbing lions, shoebill storks, and over 1,000 bird species. From 
+                            Queen Elizabeth to Murchison Falls, experience Africa's untamed wilderness.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Featured Parks</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Queen Elizabeth National Park</li>
+                                    <li>• Murchison Falls National Park</li>
+                                    <li>• Kidepo Valley National Park</li>
+                                    <li>• Lake Mburo National Park</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Wildlife Highlights</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Tree-climbing lions</li>
+                                    <li>• Shoebill storks</li>
+                                    <li>• Elephants & hippos</li>
+                                    <li>• 1000+ bird species</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Safari
+                            </a>
+                            <a href="blog.html#photography-guides" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Uganda Cultural Tours -->
+            <div id="uganda-cultural" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Uganda Cultural Tours</h3>
+                        <p class="text-gray-600 mb-6">
+                            Immerse yourself in Uganda's rich cultural heritage. Visit traditional villages, 
+                            meet local communities, learn ancient crafts, and experience authentic African 
+                            hospitality. Our cultural tours support local communities directly.
+                        </p>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-amber-600 mr-3"></i>
+                                <span>Village homestays available</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-palette text-amber-600 mr-3"></i>
+                                <span>Traditional craft workshops</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-music text-amber-600 mr-3"></i>
+                                <span>Cultural performances</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-heart text-amber-600 mr-3"></i>
+                                <span>Community benefit programs</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Cultural Tour
+                            </a>
+                            <a href="blog.html#cultural-communities" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                View Communities
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:order-first">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Uganda cultural experience" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Uganda 1-Day Tours -->
+            <div id="uganda-oneday" class="mb-20">
+                <div class="bg-amber-50 rounded-2xl p-8">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">Uganda 1-Day Tours</h3>
+                    <p class="text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+                        Perfect for travelers with limited time or those wanting to add day trips to longer itineraries
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="text-xl font-bold mb-4">Kampala City Tour</h4>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li>• Kasubi Tombs UNESCO site</li>
+                                <li>• Local markets exploration</li>
+                                <li>• Religious sites tour</li>
+                                <li>• Craft centers visit</li>
+                            </ul>
+                            <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg transition duration-300 text-center block">
+                                From $85
+                            </a>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="text-xl font-bold mb-4">Entebbe & Lake Victoria</h4>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li>• Botanical gardens walk</li>
+                                <li>• Bird watching experience</li>
+                                <li>• Lake Victoria cruise</li>
+                                <li>• Fish market visit</li>
+                            </ul>
+                            <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg transition duration-300 text-center block">
+                                From $95
+                            </a>
+                        </div>
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h4 class="text-xl font-bold mb-4">Jinja Adventure Day</h4>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li>• Source of the Nile visit</li>
+                                <li>• White water rafting</li>
+                                <li>• Bungee jumping option</li>
+                                <li>• Local lunch included</li>
+                            </ul>
+                            <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg transition duration-300 text-center block">
+                                From $120
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rwanda Tours -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Rwanda Tours</h2>
+                <p class="text-xl text-gray-600">Explore the Land of a Thousand Hills</p>
+            </div>
+            
+            <!-- Rwanda Gorilla Trekking -->
+            <div id="rwanda-gorilla" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Gorilla trekking in Rwanda" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Rwanda Gorilla Trekking</h3>
+                        <p class="text-gray-600 mb-6">
+                            Volcanoes National Park offers one of the world's most exclusive wildlife experiences. 
+                            Trek through bamboo forests and volcanic slopes to encounter habituated mountain gorilla 
+                            families. Rwanda's conservation success story makes this a truly special experience.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Experience Includes</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Gorilla permits</li>
+                                    <li>• Expert ranger guides</li>
+                                    <li>• Pre-trek briefing</li>
+                                    <li>• Certificate of participation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Additional Options</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Golden monkey tracking</li>
+                                    <li>• Dian Fossey tomb visit</li>
+                                    <li>• Cultural village tour</li>
+                                    <li>• Photography permits</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Rwanda Trek
+                            </a>
+                            <a href="blog.html#gorilla-comparison" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Compare with Uganda
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rwanda Nyungwe Forest -->
+            <div id="rwanda-nyungwe" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Nyungwe Forest Adventures</h3>
+                        <p class="text-gray-600 mb-6">
+                            Explore one of Africa's oldest rainforests with its famous canopy walkway, 
+                            chimpanzee tracking, and incredible biodiversity. Nyungwe is home to 13 
+                            primate species and over 300 bird species in pristine montane forest.
+                        </p>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-tree text-amber-600 mr-3"></i>
+                                <span>Canopy walkway experience</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-binoculars text-amber-600 mr-3"></i>
+                                <span>Chimpanzee tracking</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-feather text-amber-600 mr-3"></i>
+                                <span>300+ bird species</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-hiking text-amber-600 mr-3"></i>
+                                <span>Nature hiking trails</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Nyungwe Tour
+                            </a>
+                            <a href="packages.html#cultural-tours" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 inline-block text-center">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:order-first">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Nyungwe Forest canopy walk" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tanzania Tours -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tanzania Tours</h2>
+                <p class="text-xl text-gray-600">Experience the Safari Capital of the World</p>
+            </div>
+            
+            <!-- Tanzania Serengeti Safari -->
+            <div id="tanzania-serengeti" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Serengeti Safari Experience</h3>
+                        <p class="text-gray-600 mb-6">
+                            Witness the greatest wildlife spectacle on Earth - the Great Migration. 
+                            Over 2 million wildebeest, zebras, and gazelles move across the endless 
+                            plains in search of fresh grazing, followed by predators in nature's 
+                            most dramatic cycle.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Migration Seasons</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Dec-Mar: Calving season</li>
+                                    <li>• Apr-Jun: Moving north</li>
+                                    <li>• Jul-Oct: River crossings</li>
+                                    <li>• Nov: Return south</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Safari Highlights</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Big Five game viewing</li>
+                                    <li>• Hot air balloon rides</li>
+                                    <li>• Mara River crossings</li>
+                                    <li>• Cultural experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Serengeti Safari
+                            </a>
+                            <a href="blog.html#migration-calendar" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Migration Calendar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:order-first">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Serengeti migration" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tanzania Kilimanjaro -->
+            <div id="tanzania-kilimanjaro" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Mount Kilimanjaro" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Mount Kilimanjaro Climbing</h3>
+                        <p class="text-gray-600 mb-6">
+                            Conquer Africa's highest peak and one of the Seven Summits. Our experienced 
+                            guides will lead you through five distinct climate zones to the "Roof of Africa" 
+                            at 19,341 feet. No technical climbing experience required.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Popular Routes</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Machame Route (7 days)</li>
+                                    <li>• Lemosho Route (8 days)</li>
+                                    <li>• Marangu Route (6 days)</li>
+                                    <li>• Rongai Route (7 days)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">What's Included</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Professional guides</li>
+                                    <li>• All meals & camping gear</li>
+                                    <li>• Park fees & permits</li>
+                                    <li>• Porter services</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Kilimanjaro Trek
+                            </a>
+                            <a href="blog.html#kilimanjaro-routes" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Route Comparison
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Kenya Tours -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Kenya Tours</h2>
+                <p class="text-xl text-gray-600">Discover the Birthplace of Safari</p>
+            </div>
+            
+            <!-- Kenya Masai Mara -->
+            <div id="kenya-masai" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Masai Mara Game Reserve</h3>
+                        <p class="text-gray-600 mb-6">
+                            The world's most famous safari destination offers year-round wildlife viewing 
+                            and the spectacular Great Migration river crossings. Experience the Big Five, 
+                            Maasai culture, and endless savanna landscapes that defined African safari.
+                        </p>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-binoculars text-amber-600 mr-3"></i>
+                                <span>Big Five guaranteed sightings</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-camera text-amber-600 mr-3"></i>
+                                <span>Professional photography guides</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-amber-600 mr-3"></i>
+                                <span>Authentic Maasai cultural visits</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marked-alt text-amber-600 mr-3"></i>
+                                <span>Migration river crossing sites</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Masai Mara Safari
+                            </a>
+                            <a href="packages.html#safari-tours" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 inline-block text-center">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:order-first">
+                        <img src="https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Masai Mara wildlife" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kenya Amboseli -->
+            <div id="kenya-amboseli" class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Amboseli elephants with Kilimanjaro" class="rounded-xl shadow-lg w-full h-96 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6">Amboseli National Park</h3>
+                        <p class="text-gray-600 mb-6">
+                            Famous for its large elephant herds and stunning views of Mount Kilimanjaro, 
+                            Amboseli offers some of Africa's best wildlife photography opportunities. 
+                            The park's diverse ecosystems support over 400 bird species and classic African wildlife.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">Signature Experiences</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Kilimanjaro sunrise views</li>
+                                    <li>• Elephant photography</li>
+                                    <li>• Observation Hill panoramas</li>
+                                    <li>• Cultural interactions</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Wildlife Highlights</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Large elephant herds</li>
+                                    <li>• Lions and cheetahs</li>
+                                    <li>• 400+ bird species</li>
+                                    <li>• Hippos and crocodiles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="booking.html#booking-form" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Book Amboseli Safari
+                            </a>
+                            <a href="blog.html" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg transition duration-300 text-center">
+                                Photography Tours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-amber-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your East African Adventure?</h2>
+            <p class="text-xl text-amber-100 mb-8 max-w-3xl mx-auto">
+                Our expert travel consultants are ready to help you plan the perfect itinerary 
+                combining the best of Uganda, Rwanda, Tanzania, and Kenya
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-amber-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Get Free Consultation
+                </a>
+                <a href="booking.html" class="border-2 border-white text-white hover:bg-white hover:text-amber-600 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    View Booking Tools
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-amber-400 mb-4">Ready to Explore?</h3>
+                <p class="text-gray-300 mb-8">Contact our travel experts to plan your perfect East African adventure</p>
+                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Start Planning
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

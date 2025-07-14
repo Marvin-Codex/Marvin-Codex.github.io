@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-amber-700">Msafari Tours</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#featured-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Itineraries</a>
+                    <a href="blog.html" class="text-amber-600 font-semibold">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#featured-packages" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-gray-700">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-amber-600 font-semibold">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-80 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Travel Blog</h1>
+                <p class="text-xl md:text-2xl mb-6">Stories, insights, and guides from the heart of East Africa</p>
+                <p class="text-lg">Discover insider tips, wildlife encounters, and cultural experiences from our travel experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Filter -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="blog-category-btn active px-6 py-2 rounded-full border border-amber-600 text-amber-600 bg-amber-50 font-semibold transition duration-300" data-category="all">
+                    All Posts
+                </button>
+                <button class="blog-category-btn px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-amber-600 hover:text-amber-600 transition duration-300" data-category="wildlife">
+                    Wildlife
+                </button>
+                <button class="blog-category-btn px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-amber-600 hover:text-amber-600 transition duration-300" data-category="culture">
+                    Culture
+                </button>
+                <button class="blog-category-btn px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-amber-600 hover:text-amber-600 transition duration-300" data-category="tips">
+                    Travel Tips
+                </button>
+                <button class="blog-category-btn px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-amber-600 hover:text-amber-600 transition duration-300" data-category="conservation">
+                    Conservation
+                </button>
+                <button class="blog-category-btn px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-amber-600 hover:text-amber-600 transition duration-300" data-category="adventure">
+                    Adventure
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Article</h2>
+                <p class="text-lg text-gray-600">Don't miss our latest featured story</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-0">
+                    <div class="h-64 lg:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Wildlife</span>
+                            <span class="text-gray-500 text-sm">January 15, 2025</span>
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                            Mountain Gorilla Conservation: A Success Story in the Making
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Discover how community-based conservation efforts in Uganda and Rwanda have helped increase mountain gorilla populations from 650 to over 1,000 individuals in just two decades. Learn about the remarkable journey of protecting these gentle giants.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-10 h-10 rounded-full mr-3">
+                                <div>
+                                    <p class="font-semibold text-gray-900">Dr. Sarah Mukisa</p>
+                                    <p class="text-sm text-gray-600">Wildlife Conservation Expert</p>
+                                </div>
+                            </div>
+                            <a href="#article-1" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2 rounded-lg font-semibold transition duration-300">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Latest Stories</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore our collection of travel stories, wildlife encounters, and cultural insights from across East Africa
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="wildlife">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Wildlife</span>
+                            <span class="text-gray-500 text-sm">January 12, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">The Great Migration: Best Time and Places to Witness</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive guide to experiencing one of nature's most spectacular events across the Serengeti-Mara ecosystem.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Michael Ochieng</span>
+                            </div>
+                            <a href="#article-2" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="culture">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1570729673266-c2a7b11b9904?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Culture</span>
+                            <span class="text-gray-500 text-sm">January 10, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Maasai Culture: Traditions in the Modern World</h3>
+                        <p class="text-gray-600 mb-4">Exploring how the Maasai people preserve their ancient traditions while adapting to contemporary challenges.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Grace Kimani</span>
+                            </div>
+                            <a href="#article-3" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="tips">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Travel Tips</span>
+                            <span class="text-gray-500 text-sm">January 8, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Essential Packing Guide for East African Safari</h3>
+                        <p class="text-gray-600 mb-4">Everything you need to know about what to pack for your first safari adventure in East Africa.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">James Mutinda</span>
+                            </div>
+                            <a href="#article-4" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="adventure">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Adventure</span>
+                            <span class="text-gray-500 text-sm">January 5, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Conquering Kilimanjaro: A Beginner's Guide</h3>
+                        <p class="text-gray-600 mb-4">Tips and insights for first-time climbers planning to reach the Roof of Africa.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">David Mwangi</span>
+                            </div>
+                            <a href="#article-5" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="conservation">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Conservation</span>
+                            <span class="text-gray-500 text-sm">January 3, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Rhino Conservation Success in Kenya</h3>
+                        <p class="text-gray-600 mb-4">How dedicated conservation efforts are bringing black rhinos back from the brink of extinction.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Dr. Anne Kariuki</span>
+                            </div>
+                            <a href="#article-6" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="culture">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0d6a5b0d635?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Culture</span>
+                            <span class="text-gray-500 text-sm">December 30, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Batwa People: The Forest's First Inhabitants</h3>
+                        <p class="text-gray-600 mb-4">Learning about the rich history and current challenges of the Batwa people in Uganda's forests.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Peter Mukasa</span>
+                            </div>
+                            <a href="#article-7" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="tips">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Travel Tips</span>
+                            <span class="text-gray-500 text-sm">December 28, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Photography Tips for Safari Adventures</h3>
+                        <p class="text-gray-600 mb-4">Capture stunning wildlife moments with these expert photography tips from professional safari guides.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Robert Owino</span>
+                            </div>
+                            <a href="#article-8" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="wildlife">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Wildlife</span>
+                            <span class="text-gray-500 text-sm">December 25, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Big Five: Where to Find Them in East Africa</h3>
+                        <p class="text-gray-600 mb-4">Your complete guide to spotting lions, elephants, buffalos, leopards, and rhinos across East African parks.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Emily Wanjiku</span>
+                            </div>
+                            <a href="#article-9" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="adventure">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Adventure</span>
+                            <span class="text-gray-500 text-sm">December 22, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">White Water Rafting on the Nile</h3>
+                        <p class="text-gray-600 mb-4">Experience the thrill of navigating the world's longest river through Uganda's Jinja rapids.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Mark Ssebunya</span>
+                            </div>
+                            <a href="#article-10" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 10 - Uganda vs Rwanda Gorilla Trekking -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="wildlife" id="gorilla-comparison">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Wildlife</span>
+                            <span class="text-gray-500 text-sm">January 20, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Uganda vs Rwanda: Which Gorilla Trek is Right for You?</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive comparison of gorilla trekking experiences in Uganda's Bwindi and Rwanda's Volcanoes National Park.</p>
+                        
+                        <!-- Expandable Content -->
+                        <div id="gorilla-comparison-content" class="hidden mt-4 pt-4 border-t">
+                            <div class="space-y-4">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-green-800 mb-2">🇺🇬 Uganda (Bwindi)</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Permit: $700 per person</li>
+                                            <li>• 19 habituated gorilla families</li>
+                                            <li>• More challenging terrain</li>
+                                            <li>• Longer trekking time (2-8 hours)</li>
+                                            <li>• More remote, authentic feel</li>
+                                            <li>• Multiple starting points</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-blue-800 mb-2">🇷🇼 Rwanda (Volcanoes)</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Permit: $1,500 per person</li>
+                                            <li>• 12 habituated gorilla families</li>
+                                            <li>• Better accessibility</li>
+                                            <li>• Shorter trekking time (1-4 hours)</li>
+                                            <li>• Luxury accommodations nearby</li>
+                                            <li>• Single starting point (Kinigi)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-amber-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-amber-800 mb-2">💡 Which Should You Choose?</h4>
+                                    <p class="text-sm text-gray-700">
+                                        <strong>Choose Uganda if:</strong> You're budget-conscious, enjoy challenging hikes, and want a more remote experience.<br>
+                                        <strong>Choose Rwanda if:</strong> You prefer comfort, have limited time, or want easier accessibility with luxury options.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Dr. Sarah Mukisa</span>
+                            </div>
+                            <button onclick="toggleBlogContent('gorilla-comparison-content', this)" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+                                See More →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 11 - Migration Calendar -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="wildlife" id="migration-calendar">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Wildlife</span>
+                            <span class="text-gray-500 text-sm">January 18, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Great Migration Calendar: When and Where to Go</h3>
+                        <p class="text-gray-600 mb-4">Month-by-month guide to following the Great Migration across the Serengeti-Mara ecosystem.</p>
+                        
+                        <!-- Expandable Content -->
+                        <div id="migration-calendar-content" class="hidden mt-4 pt-4 border-t">
+                            <div class="space-y-4">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 mb-2">🌱 Calving Season (Dec-Mar)</h4>
+                                        <p class="text-sm text-gray-600 mb-2">Southern Serengeti & Ndutu</p>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• 500,000 calves born</li>
+                                            <li>• Predator action at peak</li>
+                                            <li>• Easy game viewing</li>
+                                            <li>• Best time: January-February</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 mb-2">🌊 River Crossings (Jul-Oct)</h4>
+                                        <p class="text-sm text-gray-600 mb-2">Masai Mara & Northern Serengeti</p>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Dramatic Mara River crossings</li>
+                                            <li>• High predator activity</li>
+                                            <li>• Peak tourist season</li>
+                                            <li>• Best time: August-September</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-blue-800 mb-2">📅 Complete Calendar</h4>
+                                    <div class="text-sm text-gray-700 space-y-1">
+                                        <p><strong>Jan-Mar:</strong> Southern Serengeti (Calving)</p>
+                                        <p><strong>Apr-May:</strong> Central Serengeti (Moving North)</p>
+                                        <p><strong>Jun-Jul:</strong> Western Corridor (Grumeti crossings)</p>
+                                        <p><strong>Aug-Oct:</strong> Northern Serengeti/Masai Mara (Mara crossings)</p>
+                                        <p><strong>Nov-Dec:</strong> Eastern Serengeti (Return journey)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Michael Ochieng</span>
+                            </div>
+                            <button onclick="toggleBlogContent('migration-calendar-content', this)" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+                                See More →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 12 - Kilimanjaro Routes -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="adventure" id="kilimanjaro-routes">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Adventure</span>
+                            <span class="text-gray-500 text-sm">January 16, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Kilimanjaro Routes Compared: Choose Your Path to the Summit</h3>
+                        <p class="text-gray-600 mb-4">Detailed comparison of all Kilimanjaro climbing routes to help you choose the best path for your skill level.</p>
+                        
+                        <!-- Expandable Content -->
+                        <div id="kilimanjaro-routes-content" class="hidden mt-4 pt-4 border-t">
+                            <div class="space-y-4">
+                                <div class="grid gap-4">
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-green-800 mb-2">🥇 Machame Route (7 days)</h4>
+                                        <p class="text-sm text-gray-600 mb-2">Most popular route - "Whiskey Route"</p>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Success Rate: 85%</li>
+                                            <li>• Difficulty: Moderate-Hard</li>
+                                            <li>• Scenery: Excellent variety</li>
+                                            <li>• Best for: First-time climbers wanting challenge</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-blue-800 mb-2">🚶 Lemosho Route (8 days)</h4>
+                                        <p class="text-sm text-gray-600 mb-2">Most scenic route with best acclimatization</p>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Success Rate: 90%</li>
+                                            <li>• Difficulty: Moderate</li>
+                                            <li>• Scenery: Outstanding</li>
+                                            <li>• Best for: Those wanting highest success rate</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-yellow-800 mb-2">🏠 Marangu Route (6 days)</h4>
+                                        <p class="text-sm text-gray-600 mb-2">Only hut route - "Coca-Cola Route"</p>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Success Rate: 65%</li>
+                                            <li>• Difficulty: Moderate</li>
+                                            <li>• Accommodation: Huts (not camping)</li>
+                                            <li>• Best for: Those preferring hut accommodation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">David Mwangi</span>
+                            </div>
+                            <button onclick="toggleBlogContent('kilimanjaro-routes-content', this)" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+                                See More →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 13 - Cultural Communities -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="culture" id="cultural-communities">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0d6a5b0d635?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Culture</span>
+                            <span class="text-gray-500 text-sm">January 14, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Meet East Africa's Indigenous Communities</h3>
+                        <p class="text-gray-600 mb-4">Discover the rich cultures and traditions of East Africa's indigenous peoples and how tourism supports their communities.</p>
+                        
+                        <!-- Expandable Content -->
+                        <div id="cultural-communities-content" class="hidden mt-4 pt-4 border-t">
+                            <div class="space-y-4">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-orange-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-orange-800 mb-2">🏺 Batwa People (Uganda)</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Former forest dwellers of Bwindi</li>
+                                            <li>• Expert honey gatherers & healers</li>
+                                            <li>• Traditional fire-making demonstrations</li>
+                                            <li>• Community visits support education</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-red-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-red-800 mb-2">🛡️ Maasai People (Kenya/Tanzania)</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Semi-nomadic pastoralists</li>
+                                            <li>• Famous jumping dances & ceremonies</li>
+                                            <li>• Traditional beadwork & crafts</li>
+                                            <li>• Wildlife conservation partners</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-green-800 mb-2">🤝 How Tourism Helps</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Direct income from cultural visits</li>
+                                        <li>• Support for local schools & healthcare</li>
+                                        <li>• Preservation of traditional skills</li>
+                                        <li>• Alternative to environmentally harmful activities</li>
+                                        <li>• Cultural pride & identity preservation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Grace Kimani</span>
+                            </div>
+                            <button onclick="toggleBlogContent('cultural-communities-content', this)" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+                                See More →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 14 - Photography Guide -->
+                <article class="blog-post bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" data-category="tips" id="photography-guide">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mr-3">Travel Tips</span>
+                            <span class="text-gray-500 text-sm">January 12, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Wildlife Photography in Amboseli: Tips from the Pros</h3>
+                        <p class="text-gray-600 mb-4">Master the art of elephant photography with Mount Kilimanjaro backdrops in Kenya's most photogenic park.</p>
+                        
+                        <!-- Expandable Content -->
+                        <div id="photography-guide-content" class="hidden mt-4 pt-4 border-t">
+                            <div class="space-y-4">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-bold text-blue-800 mb-2">📸 Essential Camera Settings</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• <strong>Lens:</strong> 300-600mm telephoto recommended</li>
+                                        <li>• <strong>Aperture:</strong> f/5.6-f/8 for sharp subjects</li>
+                                        <li>• <strong>Shutter Speed:</strong> 1/500s minimum for moving animals</li>
+                                        <li>• <strong>ISO:</strong> Keep below 1600 for best quality</li>
+                                    </ul>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-yellow-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-yellow-800 mb-2">🌅 Best Times</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Early morning (6-9 AM)</li>
+                                            <li>• Late afternoon (4-6 PM)</li>
+                                            <li>• Clear mornings for Kilimanjaro views</li>
+                                            <li>• Overcast days for even lighting</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h4 class="font-bold text-green-800 mb-2">🎯 Pro Tips</h4>
+                                        <ul class="text-sm text-gray-700 space-y-1">
+                                            <li>• Focus on the eyes</li>
+                                            <li>• Use burst mode for action</li>
+                                            <li>• Get low for dramatic angles</li>
+                                            <li>• Include environmental context</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Robert Owino</span>
+                            </div>
+                            <button onclick="toggleBlogContent('photography-guide-content', this)" class="text-amber-600 hover:text-amber-700 font-semibold text-sm">
+                                See More →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-amber-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated with Our Travel Stories</h2>
+            <p class="text-lg text-gray-600 mb-8">Subscribe to our newsletter and get the latest travel insights, wildlife updates, and exclusive safari deals delivered to your inbox.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                <button class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+            
+            <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-400 mb-4">Msafari Tours</h3>
+                    <p class="text-gray-300 mb-6">
+                        Your gateway to authentic East African experiences. Creating memories that last a lifetime through responsible and sustainable tourism.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Tour Packages</h4>
+                    <ul class="space-y-2">
+                        <li><a href="packages.html#safari-tours" class="text-gray-300 hover:text-amber-400 transition duration-300">Safari Tours</a></li>
+                        <li><a href="packages.html#gorilla-packages" class="text-gray-300 hover:text-amber-400 transition duration-300">Gorilla Packages</a></li>
+                        <li><a href="packages.html#cultural-tours" class="text-gray-300 hover:text-amber-400 transition duration-300">Cultural Tours</a></li>
+                        <li><a href="packages.html#adventure-tours" class="text-gray-300 hover:text-amber-400 transition duration-300">Adventure Tours</a></li>
+                        <li><a href="packages.html#luxury-packages" class="text-gray-300 hover:text-amber-400 transition duration-300">Luxury Packages</a></li>
+                        <li><a href="packages.html#budget-tours" class="text-gray-300 hover:text-amber-400 transition duration-300">Budget Tours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Destinations -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Destinations</h4>
+                    <ul class="space-y-2">
+                        <li><a href="countries.html#uganda" class="text-gray-300 hover:text-amber-400 transition duration-300">Uganda</a></li>
+                        <li><a href="countries.html#rwanda" class="text-gray-300 hover:text-amber-400 transition duration-300">Rwanda</a></li>
+                        <li><a href="countries.html#tanzania" class="text-gray-300 hover:text-amber-400 transition duration-300">Tanzania</a></li>
+                        <li><a href="countries.html#kenya" class="text-gray-300 hover:text-amber-400 transition duration-300">Kenya</a></li>
+                        <li><a href="booking.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Book Now</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Stay Updated</h4>
+                    <p class="text-gray-300 mb-4">Get the latest tour packages and travel tips delivered to your inbox.</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500">
+                        <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg font-semibold transition duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 Msafari Tours. All rights reserved. | 
+                    <a href="#" class="text-amber-400 hover:text-amber-300">Privacy Policy</a> | 
+                    <a href="#" class="text-amber-400 hover:text-amber-300">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog category filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.blog-category-btn');
+            const blogPosts = document.querySelectorAll('.blog-post');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => {
+                        b.classList.remove('active', 'bg-amber-50', 'text-amber-600', 'border-amber-600');
+                        b.classList.add('border-gray-300', 'text-gray-700');
+                    });
+                    
+                    this.classList.add('active', 'bg-amber-50', 'text-amber-600', 'border-amber-600');
+                    this.classList.remove('border-gray-300', 'text-gray-700');
+
+                    // Filter blog posts
+                    blogPosts.forEach(post => {
+                        if (category === 'all' || post.getAttribute('data-category') === category) {
+                            post.style.display = 'block';
+                            post.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Toggle blog content function
+        function toggleBlogContent(contentId, button) {
+            const content = document.getElementById(contentId);
+            const isDesktop = window.innerWidth >= 1024; // lg breakpoint
+            
+            if (isDesktop) {
+                // Show modal on desktop
+                showBlogModal(contentId, content, button);
+            } else {
+                // Use inline expansion on mobile/tablet
+                const isHidden = content.classList.contains('hidden');
+                
+                if (isHidden) {
+                    content.classList.remove('hidden');
+                    content.style.animation = 'fadeIn 0.5s ease-in';
+                    button.textContent = 'See Less ↑';
+                } else {
+                    content.classList.add('hidden');
+                    button.textContent = 'See More →';
+                }
+            }
+        }
+
+        // Modal Functions for Desktop Blog Content
+        function showBlogModal(contentId, contentElement, button) {
+            // Get blog title from the parent article
+            const blogArticle = contentElement.closest('article');
+            let blogTitle = 'Blog Details';
+            
+            if (blogArticle) {
+                const titleElement = blogArticle.querySelector('h3');
+                if (titleElement) {
+                    blogTitle = titleElement.textContent.trim();
+                }
+            }
+            
+            // Create modal overlay
+            const modal = document.createElement('div');
+            modal.id = 'blog-modal';
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            modal.style.backdropFilter = 'blur(4px)';
+            modal.style.WebkitBackdropFilter = 'blur(4px)';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'bg-white rounded-xl max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-2xl';
+            modalContent.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+            modalContent.style.border = '1px solid rgba(229, 231, 235, 0.5)';
+            
+            // Clone the content and make it visible
+            const clonedContent = contentElement.cloneNode(true);
+            clonedContent.classList.remove('hidden', 'border-t', 'pt-4', 'mt-4');
+            clonedContent.classList.add('p-8');
+            
+            // Add close button
+            const closeButton = document.createElement('button');
+            closeButton.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+            closeButton.className = 'absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition duration-300 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl';
+            closeButton.onclick = closeBlogModal;
+            
+            // Add modal header
+            const modalHeader = document.createElement('div');
+            modalHeader.className = 'border-b pb-4 mb-6 sticky top-0 bg-white z-10 px-8 pt-8';
+            modalHeader.innerHTML = `
+                <h3 class="text-3xl font-bold text-gray-900">${blogTitle}</h3>
+                <p class="text-gray-600 mt-2">Complete article content</p>
+            `;
+            
+            // Assemble modal
+            modalContent.appendChild(closeButton);
+            modalContent.appendChild(modalHeader);
+            modalContent.appendChild(clonedContent);
+            modal.appendChild(modalContent);
+            
+            // Add to page
+            document.body.appendChild(modal);
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+            
+            // Add click outside to close
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeBlogModal();
+                }
+            });
+            
+            // Add escape key to close
+            document.addEventListener('keydown', handleBlogModalEscape);
+            
+            // Animate in
+            modal.style.opacity = '0';
+            modal.style.transition = 'opacity 0.3s ease-out';
+            setTimeout(() => {
+                modal.style.opacity = '1';
+            }, 10);
+        }
+
+        function closeBlogModal() {
+            const modal = document.getElementById('blog-modal');
+            if (modal) {
+                // Add closing animation
+                modal.style.opacity = '0';
+                modal.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => {
+                    if (document.body.contains(modal)) {
+                        document.body.removeChild(modal);
+                    }
+                    document.body.style.overflow = ''; // Restore scroll
+                    document.removeEventListener('keydown', handleBlogModalEscape);
+                }, 300);
+            }
+        }
+
+        function handleBlogModalEscape(e) {
+            if (e.key === 'Escape') {
+                closeBlogModal();
+            }
+        }
+
+        // Update button text based on screen size
+        function updateBlogButtonText() {
+            const isDesktop = window.innerWidth >= 1024;
+            const blogButtons = document.querySelectorAll('[onclick*="toggleBlogContent"]');
+            
+            blogButtons.forEach(button => {
+                const contentId = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                const contentElement = document.getElementById(contentId);
+                
+                if (contentElement) {
+                    if (isDesktop) {
+                        button.innerHTML = 'Read Full Article <i class="fas fa-external-link-alt ml-1"></i>';
+                    } else {
+                        // Reset to original mobile text
+                        if (contentElement.classList.contains('hidden')) {
+                            button.textContent = 'See More →';
+                        } else {
+                            button.textContent = 'See Less ↑';
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize and add resize listener
+        document.addEventListener('DOMContentLoaded', function() {
+            updateBlogButtonText();
+            
+            // Update button text on window resize
+            window.addEventListener('resize', function() {
+                // Debounce the resize event
+                clearTimeout(window.blogResizeTimer);
+                window.blogResizeTimer = setTimeout(function() {
+                    updateBlogButtonText();
+                }, 250);
+            });
+        });
+
+        // Add fade in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tour Packages - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-amber-700">Msafari Tours</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-amber-600 font-semibold hover:text-amber-700 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#featured-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Itineraries</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-amber-600 font-semibold flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#featured-packages" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-gray-700">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-gray-700">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-80 bg-cover bg-center packages-hero-bg">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">All Tour Packages</h1>
+                <p class="text-xl md:text-2xl mb-6">Discover our complete collection of East African adventures</p>
+                <p class="text-lg">Filter, compare, and find your perfect safari experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-stone-50 rounded-xl p-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
+                    <!-- Search Bar -->
+                    <div class="lg:col-span-2">
+                        <div class="relative">
+                            <input type="text" id="package-search" placeholder="Search packages..." 
+                                   class="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
+                            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Duration Filter -->
+                    <div>
+                        <select id="duration-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">All Durations</option>
+                            <option value="1-3">1-3 Days</option>
+                            <option value="4-7">4-7 Days</option>
+                            <option value="8-14">8-14 Days</option>
+                            <option value="15+">15+ Days</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Price Filter -->
+                    <div>
+                        <select id="price-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">All Prices</option>
+                            <option value="0-1000">Under $1,000</option>
+                            <option value="1000-2500">$1,000 - $2,500</option>
+                            <option value="2500-5000">$2,500 - $5,000</option>
+                            <option value="5000+">$5,000+</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Category Filter -->
+                    <div>
+                        <select id="category-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">All Categories</option>
+                            <option value="safari">Safari Tours</option>
+                            <option value="gorilla">Gorilla Trekking</option>
+                            <option value="cultural">Cultural Tours</option>
+                            <option value="adventure">Adventure Tours</option>
+                            <option value="luxury">Luxury Packages</option>
+                            <option value="budget">Budget Tours</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Advanced Filters -->
+                <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <!-- Country Filter -->
+                    <div>
+                        <select id="country-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">All Countries</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="rwanda">Rwanda</option>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="multi">Multi-Country</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Group Size -->
+                    <div>
+                        <select id="group-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">Group Size</option>
+                            <option value="small">1-6 People</option>
+                            <option value="medium">7-12 People</option>
+                            <option value="large">13+ People</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Difficulty Level -->
+                    <div>
+                        <select id="difficulty-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="challenging">Challenging</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Accommodation -->
+                    <div>
+                        <select id="accommodation-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="">Accommodation</option>
+                            <option value="camping">Camping</option>
+                            <option value="budget">Budget Lodges</option>
+                            <option value="mid-range">Mid-range Hotels</option>
+                            <option value="luxury">Luxury Lodges</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Sort Options -->
+                    <div>
+                        <select id="sort-filter" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500">
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="duration-short">Duration: Short to Long</option>
+                            <option value="duration-long">Duration: Long to Short</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Clear Filters -->
+                    <div>
+                        <button id="clear-filters" class="w-full px-4 py-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg font-semibold transition duration-300">
+                            Clear All
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Summary -->
+    <section class="py-4 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <p id="results-count" class="text-gray-600">Showing 12 packages</p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-600">View:</span>
+                    <button id="grid-view" class="p-2 bg-amber-100 text-amber-600 rounded"><i class="fas fa-th-large"></i></button>
+                    <button id="list-view" class="p-2 text-gray-400 hover:text-gray-600 rounded"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Packages Grid -->
+    <section class="py-12 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="packages-container" class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                
+                <!-- Package 1: Ultimate Uganda Safari -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="safari" data-country="uganda" data-duration="15" data-price="3200" data-group="small" data-difficulty="moderate" data-accommodation="luxury">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-uganda-safari"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-semibold">Bestseller</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(127)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">15 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">15-Day Ultimate Uganda Safari</h3>
+                        <p class="text-gray-600 mb-4">Complete wildlife experience covering all major national parks including gorilla trekking in Bwindi Impenetrable Forest</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Uganda (5 National Parks)</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 8 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Luxury Lodges</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+8</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$3,200</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Save $300</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="uganda-safari">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2: Gorilla & Golden Monkeys -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="gorilla" data-country="uganda" data-duration="5" data-price="1450" data-group="small" data-difficulty="moderate" data-accommodation="mid-range">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-gorilla-golden"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">Eco-Friendly</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(89)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">5 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">5-Day Gorilla & Golden Monkeys</h3>
+                        <p class="text-gray-600 mb-4">Unique primate experience combining mountain gorillas in Bwindi and golden monkeys in Mgahinga National Park</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Uganda (Bwindi & Mgahinga)</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 6 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Eco-Lodges</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1606897623479-3b51b6bb4e48?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1564760290817-d2a8e6ac0b9e?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+6</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$1,450</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Limited Spots</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="gorilla-golden">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3: Kilimanjaro Adventure -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="adventure" data-country="tanzania" data-duration="8" data-price="2100" data-group="medium" data-difficulty="challenging" data-accommodation="camping">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-kilimanjaro"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">Adventure</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="far fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(156)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">8 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">8-Day Kilimanjaro Machame Route</h3>
+                        <p class="text-gray-600 mb-4">Conquer Africa's highest peak via the scenic Machame route with experienced mountain guides and support team</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Tanzania (Mount Kilimanjaro)</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 12 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Mountain Camping</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+9</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$2,100</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Early Bird</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="kilimanjaro">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 4: Cultural Uganda -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="cultural" data-country="uganda" data-duration="7" data-price="980" data-group="medium" data-difficulty="easy" data-accommodation="mid-range">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-cultural-uganda"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">Cultural</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(67)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">7 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">7-Day Cultural Uganda Experience</h3>
+                        <p class="text-gray-600 mb-4">Immerse in Batwa, Karamojong, and Buganda cultures with community visits and traditional activities</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Uganda (Multiple Regions)</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 10 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Cultural Lodges</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1570729673266-c2a7b11b9904?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0d6a5b0d635?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+7</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$980</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Authentic</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="cultural-uganda">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 5: Kenya-Tanzania Safari -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="safari" data-country="multi" data-duration="12" data-price="4200" data-group="small" data-difficulty="moderate" data-accommodation="luxury">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-kenya-tanzania"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">Cross-Border</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="far fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(201)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">12 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">12-Day Kenya-Tanzania Safari</h3>
+                        <p class="text-gray-600 mb-4">Witness the Great Migration across Serengeti and Masai Mara in this epic cross-border adventure</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Kenya & Tanzania</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 8 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Luxury Camps</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+12</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$4,200</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Premium</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="kenya-tanzania">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 6: Budget Uganda Explorer -->
+                <div class="package-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300" 
+                     data-category="budget" data-country="uganda" data-duration="6" data-price="650" data-group="large" data-difficulty="easy" data-accommodation="camping">
+                    <div class="relative">
+                        <div class="h-64 bg-cover bg-center package-budget-uganda"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">Budget</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="package-favorite w-8 h-8 bg-white bg-opacity-80 rounded-full flex items-center justify-center text-gray-600 hover:text-red-500">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="fas fa-star text-sm"></i>
+                                <i class="far fa-star text-sm"></i>
+                                <span class="text-gray-600 text-sm ml-1">(94)</span>
+                            </div>
+                            <span class="text-green-600 font-semibold text-sm">6 Days</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">6-Day Budget Uganda Explorer</h3>
+                        <p class="text-gray-600 mb-4">Affordable adventure covering Queen Elizabeth and Murchison Falls with camping accommodation</p>
+                        
+                        <!-- Package Highlights -->
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-amber-600 w-4"></i>
+                                <span>Uganda (2 National Parks)</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-users mr-2 text-amber-600 w-4"></i>
+                                <span>Max 15 People</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-bed mr-2 text-amber-600 w-4"></i>
+                                <span>Camping</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gallery Thumbnails -->
+                        <div class="grid grid-cols-4 gap-1 mb-4">
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=300&q=80');"></div>
+                            <div class="h-12 bg-cover bg-center rounded bg-gray-200 flex items-center justify-center text-gray-500 text-xs font-semibold">+5</div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-green-600">$650</span>
+                                <span class="text-gray-500 text-sm">/person</span>
+                                <div class="text-xs text-amber-600">Great Value</div>
+                            </div>
+                            <button class="package-details-btn text-amber-600 hover:text-amber-700 font-semibold" data-package="budget-uganda">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="flex gap-2">
+                            <a href="booking.html#booking-form" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Book Now
+                            </a>
+                            <a href="contact.html" class="flex-1 border border-amber-600 text-amber-600 hover:bg-amber-50 py-3 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                                Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Load More Packages
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Detail Modal -->
+    <div id="package-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl max-w-4xl w-full max-h-90vh overflow-auto">
+                <div class="p-6" id="modal-content">
+                    <!-- Modal content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-400 mb-4">Msafari Tours</h3>
+                    <p class="text-gray-300 mb-6">
+                        Your gateway to authentic East African experiences. Creating memories that last a lifetime.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="packages.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Tour Packages</a></li>
+                        <li><a href="countries.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Destinations</a></li>
+                        <li><a href="itineraries.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Itineraries</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-amber-400 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Packages -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Popular Tours</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition duration-300">Uganda Safari</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition duration-300">Gorilla Trekking</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition duration-300">Kilimanjaro Climb</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition duration-300">Cultural Tours</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i> +256 700 123 456</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@Msafaritours.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Kampala, Uganda</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Msafari Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="all-packages.js"></script>
+</body>
+</html>

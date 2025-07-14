@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Itineraries - Msafari Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-amber-700">Msafari Tours</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Home</a>
+                    
+                    <!-- Countries Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Countries <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 max-h-96 overflow-y-auto dropdown-scrollable">
+                            <div class="py-2">
+                                <a href="countries.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">View All Countries</a>
+                                <div class="border-t my-2"></div>
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b">Uganda</div>
+                                <a href="countries.html#uganda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Tours</a>
+                                <a href="countries.html#uganda-wildlife" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Wildlife Safaris</a>
+                                <a href="countries.html#uganda-cultural" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="countries.html#uganda-oneday" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">1-Day Tours</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Rwanda</div>
+                                <a href="countries.html#rwanda-gorilla" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Trekking</a>
+                                <a href="countries.html#rwanda-nyungwe" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Nyungwe Forest</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Tanzania</div>
+                                <a href="countries.html#tanzania-serengeti" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Serengeti Safari</a>
+                                <a href="countries.html#tanzania-kilimanjaro" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Kilimanjaro</a>
+                                
+                                <div class="px-4 py-2 text-sm font-semibold text-amber-700 border-b border-t mt-2">Kenya</div>
+                                <a href="countries.html#kenya-masai" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Masai Mara</a>
+                                <a href="countries.html#kenya-amboseli" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Amboseli</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Packages <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="packages.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Packages</a>
+                                <div class="border-t my-2"></div>
+                                <a href="packages.html#safari-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Safari Tours</a>
+                                <a href="packages.html#gorilla-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Gorilla Packages</a>
+                                <a href="packages.html#cultural-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Cultural Tours</a>
+                                <a href="packages.html#adventure-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Adventure Tours</a>
+                                <a href="packages.html#luxury-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Luxury Packages</a>
+                                <a href="packages.html#budget-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Budget Tours</a>
+                                <a href="packages.html#group-tours" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Group Tours</a>
+                                <a href="packages.html#custom-packages" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Custom Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="itineraries.html" class="text-amber-600 font-semibold">Itineraries</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Blogs</a>
+                    
+                    <!-- Booking Tools Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            Booking Tools <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="booking.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">All Booking Tools</a>
+                                <div class="border-t my-2"></div>
+                                <a href="booking.html#responsible-travel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Responsible Travel Pledge</a>
+                                <a href="booking.html#carbon-offset" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Carbon Offsetting</a>
+                                <a href="booking.html#booking-form" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Booking Forms</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-amber-600 transition duration-300 flex items-center">
+                            About Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 font-semibold">About Us</a>
+                                <div class="border-t my-2"></div>
+                                <a href="about.html#team" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Our Team</a>
+                                <a href="index.html#why-choose-us" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Why Choose Us</a>
+                                <a href="about.html#ethics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Ethics & Responsibility</a>
+                                <a href="about.html#partners" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Partners</a>
+                                <a href="about.html#referrals" class="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">Referral Program</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="text-gray-700 hover:text-amber-600 transition duration-300">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white border-t hidden max-h-96 overflow-y-auto dropdown-scrollable">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700">Home</a>
+                
+                <!-- Countries Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Countries <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="countries.html" class="block py-1 text-sm text-gray-600">View All Countries</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Uganda</div>
+                        <a href="countries.html#uganda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Tours</a>
+                        <a href="countries.html#uganda-wildlife" class="block py-1 text-sm text-gray-600">Wildlife Safaris</a>
+                        <a href="countries.html#uganda-cultural" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="countries.html#uganda-oneday" class="block py-1 text-sm text-gray-600">1-Day Tours</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Rwanda</div>
+                        <a href="countries.html#rwanda-gorilla" class="block py-1 text-sm text-gray-600">Gorilla Trekking</a>
+                        <a href="countries.html#rwanda-nyungwe" class="block py-1 text-sm text-gray-600">Nyungwe Forest</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Tanzania</div>
+                        <a href="countries.html#tanzania-serengeti" class="block py-1 text-sm text-gray-600">Serengeti Safari</a>
+                        <a href="countries.html#tanzania-kilimanjaro" class="block py-1 text-sm text-gray-600">Kilimanjaro</a>
+                        <div class="text-xs font-semibold text-amber-600 py-1">Kenya</div>
+                        <a href="countries.html#kenya-masai" class="block py-1 text-sm text-gray-600">Masai Mara</a>
+                        <a href="countries.html#kenya-amboseli" class="block py-1 text-sm text-gray-600">Amboseli</a>
+                    </div>
+                </div>
+                
+                <!-- Packages Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Packages <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="packages.html" class="block py-1 text-sm text-gray-600">All Packages</a>
+                        <a href="packages.html#safari-tours" class="block py-1 text-sm text-gray-600">Safari Tours</a>
+                        <a href="packages.html#gorilla-packages" class="block py-1 text-sm text-gray-600">Gorilla Packages</a>
+                        <a href="packages.html#cultural-tours" class="block py-1 text-sm text-gray-600">Cultural Tours</a>
+                        <a href="packages.html#adventure-tours" class="block py-1 text-sm text-gray-600">Adventure Tours</a>
+                        <a href="packages.html#luxury-packages" class="block py-1 text-sm text-gray-600">Luxury Packages</a>
+                        <a href="packages.html#budget-tours" class="block py-1 text-sm text-gray-600">Budget Tours</a>
+                        <a href="packages.html#group-tours" class="block py-1 text-sm text-gray-600">Group Tours</a>
+                        <a href="packages.html#custom-packages" class="block py-1 text-sm text-gray-600">Custom Packages</a>
+                    </div>
+                </div>
+                
+                <a href="itineraries.html" class="block py-2 text-amber-600 font-semibold">Itineraries</a>
+                <a href="blog.html" class="block py-2 text-gray-700">Blogs</a>
+                
+                <!-- Booking Tools Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        Booking Tools <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="booking.html" class="block py-1 text-sm text-gray-600">All Booking Tools</a>
+                        <a href="booking.html#responsible-travel" class="block py-1 text-sm text-gray-600">Responsible Travel Pledge</a>
+                        <a href="booking.html#carbon-offset" class="block py-1 text-sm text-gray-600">Carbon Offsetting</a>
+                        <a href="booking.html#booking-form" class="block py-1 text-sm text-gray-600">Booking Forms</a>
+                    </div>
+                </div>
+                
+                <!-- About Us Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-toggle w-full text-left py-2 text-gray-700 flex items-center justify-between">
+                        About Us <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="mobile-dropdown-content hidden pl-4 space-y-1">
+                        <a href="about.html" class="block py-1 text-sm text-gray-600">About Us</a>
+                        <a href="about.html#team" class="block py-1 text-sm text-gray-600">Our Team</a>
+                        <a href="index.html#why-choose-us" class="block py-1 text-sm text-gray-600">Why Choose Us</a>
+                        <a href="about.html#ethics" class="block py-1 text-sm text-gray-600">Ethics & Responsibility</a>
+                        <a href="about.html#partners" class="block py-1 text-sm text-gray-600">Partners</a>
+                        <a href="about.html#referrals" class="block py-1 text-sm text-gray-600">Referral Program</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="block py-2 text-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center itineraries-hero-bg">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                    Detailed <span class="text-amber-400">Itineraries</span>
+                </h1>
+                <p class="text-xl md:text-2xl leading-relaxed">
+                    Explore our carefully crafted day-by-day travel experiences across East Africa
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="py-8 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#wildlife-safari-15-day" class="bg-white hover:bg-amber-100 px-6 py-3 rounded-lg text-amber-700 font-semibold transition duration-300 shadow-md">
+                    15-Day Wildlife Safari
+                </a>
+                <a href="#best-uganda-12-day" class="bg-white hover:bg-amber-100 px-6 py-3 rounded-lg text-amber-700 font-semibold transition duration-300 shadow-md">
+                    12-Day Best of Uganda
+                </a>
+                <a href="#queen-murchison-6-day" class="bg-white hover:bg-amber-100 px-6 py-3 rounded-lg text-amber-700 font-semibold transition duration-300 shadow-md">
+                    6-Day Queen Elizabeth & Murchison
+                </a>
+                <a href="#gorilla-trek-3-day" class="bg-white hover:bg-amber-100 px-6 py-3 rounded-lg text-amber-700 font-semibold transition duration-300 shadow-md">
+                    3-Day Gorilla Trek
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15-Day Wildlife Safari -->
+    <section id="wildlife-safari-15-day" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Itinerary Header -->
+            <div class="grid lg:grid-cols-3 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">15-Day Uganda Wildlife Safari</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Experience the ultimate East African adventure with our comprehensive 15-day wildlife safari. 
+                        Journey through Uganda's most spectacular national parks, encounter mountain gorillas, track the Big Five, 
+                        and witness the dramatic Murchison Falls. This carefully crafted itinerary combines luxury accommodations 
+                        with authentic wildlife experiences.
+                    </p>
+                    
+                    <!-- Key Highlights -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                Destinations
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Murchison Falls National Park</li>
+                                <li>• Queen Elizabeth National Park</li>
+                                <li>• Bwindi Impenetrable Forest</li>
+                                <li>• Lake Mburo National Park</li>
+                                <li>• Kibale Forest National Park</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-binoculars text-amber-600 mr-2"></i>
+                                Wildlife Encounters
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Mountain Gorilla Trekking</li>
+                                <li>• Big Five Game Drives</li>
+                                <li>• Chimpanzee Tracking</li>
+                                <li>• Boat Safari on Nile</li>
+                                <li>• Tree-climbing Lions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Card -->
+                <div class="bg-stone-50 rounded-xl p-8 h-fit">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl font-bold text-green-600 mb-2">From $3,200</div>
+                        <div class="text-gray-600">per person</div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Duration:</span>
+                            <span class="font-semibold">15 Days / 14 Nights</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Group Size:</span>
+                            <span class="font-semibold">2-8 People</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Difficulty:</span>
+                            <span class="font-semibold">Moderate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Best Time:</span>
+                            <span class="font-semibold">Year-round</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Book Now
+                        </a>
+                        <a href="contact.html" class="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="h-64 bg-cover bg-center rounded-xl itinerary-1"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1504457464423-414d2b78c9c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1571835165687-b608c40dd041?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                </div>
+            </div>
+
+            <!-- Day-by-Day Itinerary -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Day-by-Day Itinerary</h3>
+                
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">1</div>
+                            <h4 class="text-xl font-bold text-gray-900">Arrival in Kampala</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Welcome to Uganda! Upon arrival at Entebbe International Airport, you'll be met by our representative 
+                            and transferred to your hotel in Kampala. Evening briefing about your upcoming adventure.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Kampala Serena Hotel | <strong>Meals:</strong> Dinner
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">2</div>
+                            <h4 class="text-xl font-bold text-gray-900">Transfer to Murchison Falls National Park</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Early morning departure to Murchison Falls National Park. Stop at Ziwa Rhino Sanctuary for rhino tracking 
+                            on foot. Continue to the park and visit the top of the magnificent Murchison Falls.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Paraa Safari Lodge | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">3</div>
+                            <h4 class="text-xl font-bold text-gray-900">Game Drive & Nile Boat Safari</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Morning game drive in the northern sector, searching for elephants, giraffes, lions, and buffalos. 
+                            Afternoon boat cruise on the Nile to the base of Murchison Falls, with excellent bird watching opportunities.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Paraa Safari Lodge | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Continue button for more days -->
+                    <div class="text-center pt-8">
+                        <button class="bg-amber-100 text-amber-700 px-6 py-3 rounded-lg hover:bg-amber-200 transition duration-300" 
+                                onclick="toggleItinerary('wildlife-safari-full')">
+                            <span id="wildlife-safari-toggle">Show Full 15-Day Itinerary</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hidden full itinerary -->
+                    <div id="wildlife-safari-full" class="hidden space-y-8">
+                        <!-- Days 4-15 would continue here -->
+                        <div class="border-l-4 border-amber-600 pl-6">
+                            <div class="flex items-center mb-3">
+                                <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">4</div>
+                                <h4 class="text-xl font-bold text-gray-900">Transfer to Kibale Forest</h4>
+                            </div>
+                            <p class="text-gray-700 mb-3">
+                                Journey to Kibale Forest National Park, known as the primate capital of the world. 
+                                Afternoon at leisure to explore the lodge surroundings.
+                            </p>
+                            <div class="text-sm text-gray-600">
+                                <strong>Accommodation:</strong> Primate Lodge | <strong>Meals:</strong> All meals
+                            </div>
+                        </div>
+
+                        <!-- Additional days 5-15 would continue in similar format -->
+                        <div class="bg-amber-50 p-6 rounded-xl text-center">
+                            <p class="text-gray-700 mb-4">
+                                The complete 15-day itinerary includes chimpanzee tracking, Queen Elizabeth National Park, 
+                                gorilla trekking in Bwindi, and Lake Mburo National Park.
+                            </p>
+                            <a href="contact.html" class="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition duration-300">
+                                Request Full Itinerary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What's Included -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        What's Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All accommodation (luxury lodges)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All meals during safari</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Airport transfers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> 4WD safari vehicle with pop-up roof</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Professional English-speaking guide</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All park entrance fees</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Gorilla trekking permits</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Chimpanzee tracking permits</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-times-circle text-red-600 mr-3"></i>
+                        Not Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> International flights</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Visa fees</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Travel insurance</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Personal expenses</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Alcoholic beverages</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Tips and gratuities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Optional activities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Laundry services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12-Day Best of Uganda -->
+    <section id="best-uganda-12-day" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Similar structure for 12-day itinerary -->
+            <div class="grid lg:grid-cols-3 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">12-Day Best of Uganda</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Discover the highlights of Uganda in this perfectly balanced 12-day adventure. 
+                        Combine mountain gorilla encounters with classic safari experiences, cultural immersion, 
+                        and breathtaking landscapes. This itinerary offers the best of Uganda's wildlife and culture.
+                    </p>
+                    
+                    <!-- Key Highlights -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                Destinations
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Bwindi Impenetrable Forest</li>
+                                <li>• Queen Elizabeth National Park</li>
+                                <li>• Kibale Forest National Park</li>
+                                <li>• Lake Bunyonyi</li>
+                                <li>• Kampala City Tour</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-binoculars text-amber-600 mr-2"></i>
+                                Experiences
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Mountain Gorilla Trekking</li>
+                                <li>• Chimpanzee Tracking</li>
+                                <li>• Game Drives & Boat Safaris</li>
+                                <li>• Cultural Village Visits</li>
+                                <li>• Scenic Lake Relaxation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Card -->
+                <div class="bg-white rounded-xl p-8 h-fit shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl font-bold text-green-600 mb-2">From $2,800</div>
+                        <div class="text-gray-600">per person</div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Duration:</span>
+                            <span class="font-semibold">12 Days / 11 Nights</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Group Size:</span>
+                            <span class="font-semibold">2-6 People</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Difficulty:</span>
+                            <span class="font-semibold">Moderate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Best Time:</span>
+                            <span class="font-semibold">Year-round</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Book Now
+                        </a>
+                        <a href="contact.html" class="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="h-64 bg-cover bg-center rounded-xl itinerary-2"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1571835165687-b608c40dd041?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                </div>
+            </div>
+
+            <!-- Day-by-Day Itinerary Sample -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Day-by-Day Itinerary</h3>
+                
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">1</div>
+                            <h4 class="text-xl font-bold text-gray-900">Arrival & Transfer to Bwindi</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Meet and greet at Entebbe International Airport. Scenic drive through Uganda's rolling hills 
+                            to Bwindi Impenetrable Forest. Evening briefing about gorilla trekking protocols.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Sanctuary Gorilla Forest Camp | <strong>Meals:</strong> Lunch, Dinner
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">2</div>
+                            <h4 class="text-xl font-bold text-gray-900">Mountain Gorilla Trekking</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Early morning gorilla trekking adventure in Bwindi Impenetrable Forest. Spend one magical hour 
+                            with a mountain gorilla family. Afternoon Batwa cultural experience with the forest's indigenous people.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Sanctuary Gorilla Forest Camp | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">3</div>
+                            <h4 class="text-xl font-bold text-gray-900">Transfer to Lake Bunyonyi</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Transfer to beautiful Lake Bunyonyi, known as the "Switzerland of Africa." 
+                            Canoe excursion to explore the lake's 29 islands and their unique stories. Relaxation time.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> BirdNest Resort | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Continue button -->
+                    <div class="text-center pt-8">
+                        <button class="bg-amber-100 text-amber-700 px-6 py-3 rounded-lg hover:bg-amber-200 transition duration-300" 
+                                onclick="toggleItinerary('uganda-12-day-full')">
+                            <span id="uganda-12-day-toggle">Show Full 12-Day Itinerary</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hidden full itinerary -->
+                    <div id="uganda-12-day-full" class="hidden space-y-8">
+                        <div class="bg-amber-50 p-6 rounded-xl text-center">
+                            <p class="text-gray-700 mb-4">
+                                The complete 12-day itinerary continues with Queen Elizabeth National Park, 
+                                Kibale Forest chimpanzee tracking, and Kampala city exploration.
+                            </p>
+                            <a href="contact.html" class="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition duration-300">
+                                Request Full Itinerary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What's Included/Not Included -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        What's Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All accommodation (mid-range to luxury)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All meals during tour</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Airport transfers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> 4WD safari vehicle</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Professional guide</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Gorilla & chimp permits</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All park fees</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Cultural experiences</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-times-circle text-red-600 mr-3"></i>
+                        Not Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> International flights</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Visa fees ($50)</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Travel insurance</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Personal expenses</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Tips and gratuities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Optional activities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Alcoholic beverages</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Laundry services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Brief itinerary preview -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Itinerary Highlights</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-paw text-amber-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Days 1-4</h4>
+                        <p class="text-gray-600">Gorilla trekking in Bwindi, cultural experiences, and scenic Lake Bunyonyi relaxation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-tree text-amber-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Days 5-8</h4>
+                        <p class="text-gray-600">Queen Elizabeth National Park game drives, boat safari, and tree-climbing lions</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-leaf text-amber-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-2">Days 9-12</h4>
+                        <p class="text-gray-600">Chimpanzee tracking in Kibale Forest and Kampala city exploration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6-Day Queen Elizabeth & Murchison -->
+    <section id="queen-murchison-6-day" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">6-Day Queen Elizabeth & Murchison Falls</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Experience Uganda's two most iconic national parks in this action-packed 6-day safari. 
+                        From the dramatic Murchison Falls to the diverse ecosystems of Queen Elizabeth National Park, 
+                        this itinerary maximizes wildlife viewing in a shorter timeframe.
+                    </p>
+                    
+                    <!-- Key Highlights -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                Parks & Destinations
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Murchison Falls National Park</li>
+                                <li>• Queen Elizabeth National Park</li>
+                                <li>• Kazinga Channel</li>
+                                <li>• Ishasha Sector (Tree Lions)</li>
+                                <li>• Ziwa Rhino Sanctuary</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-binoculars text-amber-600 mr-2"></i>
+                                Wildlife & Activities
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Big Four Game Drives</li>
+                                <li>• Boat Safari on Nile</li>
+                                <li>• Tree-climbing Lions</li>
+                                <li>• Murchison Falls Viewing</li>
+                                <li>• Kazinga Channel Cruise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-stone-50 rounded-xl p-8 h-fit">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl font-bold text-green-600 mb-2">From $1,200</div>
+                        <div class="text-gray-600">per person</div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Duration:</span>
+                            <span class="font-semibold">6 Days / 5 Nights</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Group Size:</span>
+                            <span class="font-semibold">2-8 People</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Difficulty:</span>
+                            <span class="font-semibold">Easy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Book Now
+                        </a>
+                        <a href="contact.html" class="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="h-64 bg-cover bg-center rounded-xl itinerary-3"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1571835165687-b608c40dd041?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                </div>
+            </div>
+
+            <!-- Day-by-Day Itinerary -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Day-by-Day Itinerary</h3>
+                
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">1</div>
+                            <h4 class="text-xl font-bold text-gray-900">Kampala to Murchison Falls</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Early departure from Kampala to Murchison Falls National Park. Stop at Ziwa Rhino Sanctuary 
+                            for rhino tracking. Continue to the park, check-in and visit the spectacular Murchison Falls.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Paraa Safari Lodge | <strong>Meals:</strong> Lunch, Dinner
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">2</div>
+                            <h4 class="text-xl font-bold text-gray-900">Murchison Falls Game Drive & Boat Safari</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Morning game drive in the northern sector searching for lions, elephants, giraffes, and buffalo. 
+                            Afternoon boat cruise on the Nile to the base of the falls with incredible wildlife viewing.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Paraa Safari Lodge | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">3</div>
+                            <h4 class="text-xl font-bold text-gray-900">Transfer to Queen Elizabeth National Park</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Scenic drive south to Queen Elizabeth National Park through the Albertine Rift Valley. 
+                            Evening game drive in the park's northern sector.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Mweya Safari Lodge | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Continue button -->
+                    <div class="text-center pt-8">
+                        <button class="bg-amber-100 text-amber-700 px-6 py-3 rounded-lg hover:bg-amber-200 transition duration-300" 
+                                onclick="toggleItinerary('queen-murchison-full')">
+                            <span id="queen-murchison-toggle">Show Full 6-Day Itinerary</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hidden full itinerary -->
+                    <div id="queen-murchison-full" class="hidden space-y-8">
+                        <div class="bg-amber-50 p-6 rounded-xl text-center">
+                            <p class="text-gray-700 mb-4">
+                                Days 4-6 include Kazinga Channel boat cruise, tree-climbing lions in Ishasha, 
+                                and final game drives before return to Kampala.
+                            </p>
+                            <a href="contact.html" class="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition duration-300">
+                                Request Full Itinerary
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What's Included/Not Included -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        What's Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Mid-range lodge accommodation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All meals during safari</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> 4WD safari vehicle</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Professional guide</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All park entrance fees</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Boat safaris</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Rhino tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Airport transfers</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-times-circle text-red-600 mr-3"></i>
+                        Not Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> International flights</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Visa fees</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Travel insurance</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Personal expenses</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Tips and gratuities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Optional activities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Alcoholic beverages</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Souvenirs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3-Day Gorilla Trek -->
+    <section id="gorilla-trek-3-day" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12 mb-16">
+                <div class="lg:col-span-2">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">3-Day Gorilla Trek in Bwindi</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Focus entirely on one of Africa's most incredible wildlife experiences. This short but intensive 
+                        itinerary takes you deep into Bwindi Impenetrable Forest for an intimate encounter with mountain gorillas 
+                        in their natural habitat.
+                    </p>
+                    
+                    <!-- Key Highlights -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-map-marker-alt text-amber-600 mr-2"></i>
+                                Experience Focus
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Bwindi Impenetrable Forest</li>
+                                <li>• Mountain Gorilla Families</li>
+                                <li>• UNESCO World Heritage Site</li>
+                                <li>• Batwa Cultural Experience</li>
+                                <li>• Forest Nature Walks</li>
+                            </ul>
+                        </div>
+                        <div class="bg-amber-50 p-6 rounded-xl">
+                            <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                                <i class="fas fa-leaf text-amber-600 mr-2"></i>
+                                Conservation Impact
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Support Gorilla Conservation</li>
+                                <li>• Community Beneficiaries</li>
+                                <li>• Anti-Poaching Efforts</li>
+                                <li>• Research Contributions</li>
+                                <li>• Habitat Protection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 h-fit shadow-lg">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl font-bold text-green-600 mb-2">From $800</div>
+                        <div class="text-gray-600">per person</div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Duration:</span>
+                            <span class="font-semibold">3 Days / 2 Nights</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Group Size:</span>
+                            <span class="font-semibold">2-8 People</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-700">Difficulty:</span>
+                            <span class="font-semibold">Moderate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <a href="booking.html#booking-form" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Book Now
+                        </a>
+                        <a href="contact.html" class="w-full border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white py-3 px-6 rounded-lg font-semibold transition duration-300 text-center block">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="h-64 bg-cover bg-center rounded-xl itinerary-4"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1571835165687-b608c40dd041?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="h-64 bg-cover bg-center rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                </div>
+            </div>
+
+            <!-- Day-by-Day Itinerary -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Day-by-Day Itinerary</h3>
+                
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">1</div>
+                            <h4 class="text-xl font-bold text-gray-900">Arrival & Transfer to Bwindi</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Pick up from Entebbe Airport or Kampala and scenic drive to Bwindi Impenetrable Forest National Park. 
+                            Journey through Uganda's beautiful countryside and rolling hills. Evening briefing about gorilla trekking.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Sanctuary Gorilla Forest Camp | <strong>Meals:</strong> Lunch, Dinner
+                        </div>
+                    </div>
+
+                    <!-- Day 2 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">2</div>
+                            <h4 class="text-xl font-bold text-gray-900">Mountain Gorilla Trekking Experience</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            The highlight of your journey! Early morning briefing followed by guided trek into the impenetrable forest 
+                            to find one of the habituated mountain gorilla families. Spend one magical hour observing these gentle giants. 
+                            Optional afternoon Batwa cultural experience.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> Sanctuary Gorilla Forest Camp | <strong>Meals:</strong> All meals
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="border-l-4 border-amber-600 pl-6">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-4">3</div>
+                            <h4 class="text-xl font-bold text-gray-900">Nature Walk & Departure</h4>
+                        </div>
+                        <p class="text-gray-700 mb-3">
+                            Optional morning nature walk in the forest or community visit. After lunch, 
+                            transfer back to Kampala or Entebbe Airport for your onward journey. 
+                            Lifetime memories of your gorilla encounter.
+                        </p>
+                        <div class="text-sm text-gray-600">
+                            <strong>Accommodation:</strong> N/A | <strong>Meals:</strong> Breakfast, Lunch
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What's Included/Not Included -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        What's Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Luxury eco-lodge accommodation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> All meals as specified</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Airport transfers</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> 4WD safari vehicle</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Professional guide</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Gorilla trekking permit ($700)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Park entrance fees</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Batwa cultural experience</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-times-circle text-red-600 mr-3"></i>
+                        Not Included
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> International flights</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Uganda visa ($50)</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Travel insurance</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Personal expenses</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Tips for guides ($10-15/day)</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Optional activities</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Alcoholic beverages</li>
+                        <li class="flex items-center"><i class="fas fa-times text-red-600 mr-2"></i> Laundry services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conservation Message -->
+            <div class="bg-green-100 p-8 rounded-xl text-center">
+                <h4 class="text-2xl font-bold text-gray-900 mb-4 flex items-center justify-center">
+                    <i class="fas fa-heart text-green-600 mr-3"></i>
+                    Conservation Impact
+                </h4>
+                <p class="text-gray-700 mb-4">
+                    Your gorilla trekking permit directly supports mountain gorilla conservation. 60% of permit fees go to 
+                    Uganda Wildlife Authority for park management, 10% to local communities, and the remainder supports 
+                    research and anti-poaching efforts.
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600">1,000+</div>
+                        <div class="text-sm text-gray-600">Mountain Gorillas Remaining</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600">19</div>
+                        <div class="text-sm text-gray-600">Habituated Gorilla Families</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600">4%</div>
+                        <div class="text-sm text-gray-600">Annual Population Growth</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-amber-600">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your East African Adventure?</h2>
+            <p class="text-xl text-amber-100 mb-8">
+                All our itineraries can be customized to match your preferences, budget, and travel dates. 
+                Contact our experts today to create your perfect safari experience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-lg font-semibold transition duration-300">
+                    Contact Our Experts
+                </a>
+                <a href="packages.html#custom-packages" class="border-2 border-white text-white hover:bg-white hover:text-amber-600 px-8 py-4 rounded-lg font-semibold transition duration-300">
+                    Build Custom Trip
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-400 mb-4">Msafari Tours</h3>
+                    <p class="text-gray-300 mb-6">
+                        Your gateway to authentic East African experiences. Creating memories that last a lifetime through responsible and sustainable tourism.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Home</a></li>
+                        <li><a href="countries.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Countries</a></li>
+                        <li><a href="packages.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Packages</a></li>
+                        <li><a href="itineraries.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Itineraries</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-amber-400 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-amber-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Itineraries -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Featured Itineraries</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#wildlife-safari-15-day" class="text-gray-300 hover:text-amber-400 transition duration-300">15-Day Wildlife Safari</a></li>
+                        <li><a href="#best-uganda-12-day" class="text-gray-300 hover:text-amber-400 transition duration-300">12-Day Best of Uganda</a></li>
+                        <li><a href="#queen-murchison-6-day" class="text-gray-300 hover:text-amber-400 transition duration-300">6-Day Parks Safari</a></li>
+                        <li><a href="#gorilla-trek-3-day" class="text-gray-300 hover:text-amber-400 transition duration-300">3-Day Gorilla Trek</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Get In Touch</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Kampala, Uganda</p>
+                        <p><i class="fas fa-phone mr-2"></i> +256 XXX XXX XXX</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@Msafaritours.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Msafari Tours. All rights reserved. | Licensed Tour Operator
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleItinerary(id) {
+            const element = document.getElementById(id);
+            const isDesktop = window.innerWidth >= 1024; // lg breakpoint
+            let toggle;
+            
+            // Handle different toggle button IDs
+            if (id === 'wildlife-safari-full') {
+                toggle = document.getElementById('wildlife-safari-toggle');
+            } else if (id === 'uganda-12-day-full') {
+                toggle = document.getElementById('uganda-12-day-toggle');
+            } else if (id === 'queen-murchison-full') {
+                toggle = document.getElementById('queen-murchison-toggle');
+            }
+            
+            if (element && toggle) {
+                if (isDesktop) {
+                    // Show modal on desktop
+                    showItineraryModal(id, element);
+                } else {
+                    // Use inline expansion on mobile/tablet
+                    if (element.classList.contains('hidden')) {
+                        element.classList.remove('hidden');
+                        if (id === 'wildlife-safari-full') {
+                            toggle.textContent = 'Show Less';
+                        } else if (id === 'uganda-12-day-full') {
+                            toggle.textContent = 'Show Less';
+                        } else if (id === 'queen-murchison-full') {
+                            toggle.textContent = 'Show Less';
+                        }
+                    } else {
+                        element.classList.add('hidden');
+                        if (id === 'wildlife-safari-full') {
+                            toggle.textContent = 'Show Full 15-Day Itinerary';
+                        } else if (id === 'uganda-12-day-full') {
+                            toggle.textContent = 'Show Full 12-Day Itinerary';
+                        } else if (id === 'queen-murchison-full') {
+                            toggle.textContent = 'Show Full 6-Day Itinerary';
+                        }
+                    }
+                }
+            }
+        }
+
+        // Modal Functions for Desktop Itinerary Content
+        function showItineraryModal(id, contentElement) {
+            // Get itinerary title from the parent section
+            const itinerarySection = contentElement.closest('section, .bg-white');
+            let itineraryTitle = 'Itinerary Details';
+            
+            if (itinerarySection) {
+                const titleElement = itinerarySection.querySelector('h2, h3');
+                if (titleElement) {
+                    itineraryTitle = titleElement.textContent.trim();
+                }
+            }
+            
+            // Create modal overlay
+            const modal = document.createElement('div');
+            modal.id = 'itinerary-modal';
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            modal.style.backdropFilter = 'blur(4px)';
+            modal.style.WebkitBackdropFilter = 'blur(4px)';
+            
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'bg-white rounded-xl max-w-5xl max-h-[90vh] overflow-y-auto relative shadow-2xl';
+            modalContent.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.25)';
+            modalContent.style.border = '1px solid rgba(229, 231, 235, 0.5)';
+            
+            // Clone the content and make it visible
+            const clonedContent = contentElement.cloneNode(true);
+            clonedContent.classList.remove('hidden');
+            clonedContent.classList.add('p-8');
+            
+            // Add close button
+            const closeButton = document.createElement('button');
+            closeButton.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+            closeButton.className = 'absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition duration-300 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:shadow-xl';
+            closeButton.onclick = closeItineraryModal;
+            
+            // Add modal header
+            const modalHeader = document.createElement('div');
+            modalHeader.className = 'border-b pb-4 mb-6 sticky top-0 bg-white z-10 px-8 pt-8';
+            modalHeader.innerHTML = `
+                <h3 class="text-3xl font-bold text-gray-900">${itineraryTitle}</h3>
+                <p class="text-gray-600 mt-2">Complete day-by-day itinerary details</p>
+            `;
+            
+            // Assemble modal
+            modalContent.appendChild(closeButton);
+            modalContent.appendChild(modalHeader);
+            modalContent.appendChild(clonedContent);
+            modal.appendChild(modalContent);
+            
+            // Add to page
+            document.body.appendChild(modal);
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+            
+            // Add click outside to close
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeItineraryModal();
+                }
+            });
+            
+            // Add escape key to close
+            document.addEventListener('keydown', handleItineraryModalEscape);
+            
+            // Animate in
+            modal.style.opacity = '0';
+            modal.style.transition = 'opacity 0.3s ease-out';
+            setTimeout(() => {
+                modal.style.opacity = '1';
+            }, 10);
+        }
+
+        function closeItineraryModal() {
+            const modal = document.getElementById('itinerary-modal');
+            if (modal) {
+                // Add closing animation
+                modal.style.opacity = '0';
+                modal.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => {
+                    if (document.body.contains(modal)) {
+                        document.body.removeChild(modal);
+                    }
+                    document.body.style.overflow = ''; // Restore scroll
+                    document.removeEventListener('keydown', handleItineraryModalEscape);
+                }, 300);
+            }
+        }
+
+        function handleItineraryModalEscape(e) {
+            if (e.key === 'Escape') {
+                closeItineraryModal();
+            }
+        }
+
+        // Update button text based on screen size
+        function updateItineraryButtonText() {
+            const isDesktop = window.innerWidth >= 1024;
+            const itineraryButtons = document.querySelectorAll('[onclick*="toggleItinerary"]');
+            
+            itineraryButtons.forEach(button => {
+                const spanElement = button.querySelector('span');
+                if (spanElement) {
+                    const id = spanElement.id;
+                    
+                    if (isDesktop) {
+                        if (id === 'wildlife-safari-toggle') {
+                            spanElement.innerHTML = 'View Full Itinerary <i class="fas fa-external-link-alt ml-1"></i>';
+                        } else if (id === 'uganda-12-day-toggle') {
+                            spanElement.innerHTML = 'View Full Itinerary <i class="fas fa-external-link-alt ml-1"></i>';
+                        } else if (id === 'queen-murchison-toggle') {
+                            spanElement.innerHTML = 'View Full Itinerary <i class="fas fa-external-link-alt ml-1"></i>';
+                        }
+                    } else {
+                        // Reset to original mobile text
+                        const relatedContent = document.getElementById(id.replace('-toggle', '-full'));
+                        if (relatedContent && relatedContent.classList.contains('hidden')) {
+                            if (id === 'wildlife-safari-toggle') {
+                                spanElement.textContent = 'Show Full 15-Day Itinerary';
+                            } else if (id === 'uganda-12-day-toggle') {
+                                spanElement.textContent = 'Show Full 12-Day Itinerary';
+                            } else if (id === 'queen-murchison-toggle') {
+                                spanElement.textContent = 'Show Full 6-Day Itinerary';
+                            }
+                        } else {
+                            spanElement.textContent = 'Show Less';
+                        }
+                    }
+                }
+            });
+        }
+
+        // Initialize and add resize listener
+        document.addEventListener('DOMContentLoaded', function() {
+            updateItineraryButtonText();
+            
+            // Update button text on window resize
+            window.addEventListener('resize', function() {
+                // Debounce the resize event
+                clearTimeout(window.itineraryResizeTimer);
+                window.itineraryResizeTimer = setTimeout(function() {
+                    updateItineraryButtonText();
+                }, 250);
+            });
+        });
+    </script>
+</body>
+</html>
